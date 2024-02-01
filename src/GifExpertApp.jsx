@@ -3,7 +3,7 @@ import { AddCategory } from "./components/AddCategory";
 import { GifGrid } from "./components/GifGrid";
 
 export const GifExpertApp = () => {
-  const [categories, setCategories] = useState(['Sailor Moon', 'Sakura']);
+  const [categories, setCategories] = useState(['Sailor Moon']);
 
   const onAddCategory = (newCategory) => {
     const lowercaseCategory = newCategory.toLowerCase();
