@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { AddCategory } from "./components/AddCategory";
-import { GifGrid } from "./components/GifGrid";
+import { AddCategory, GifGrid } from "./components";
 
 export const GifExpertApp = () => {
   const [categories, setCategories] = useState(['Sailor Moon']);
@@ -12,10 +11,6 @@ export const GifExpertApp = () => {
 
     setCategories([lowercaseCategory, ...categories]);
   };
-
-  // const capitalizeFirstLetter = (string) => {
-  //   return string.charAt(0).toUpperCase() + string.slice(1);
-  // };
 
   return (
     <>
